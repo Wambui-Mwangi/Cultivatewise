@@ -4,6 +4,7 @@ from django.db import models
 
 class Plant(models.Model):
     name = models.CharField(max_length=50)
+    category = models.CharField(max_length=30)
     description = models.TextField()
     image = models.ImageField()
     ideal_climate = models.CharField(max_length=50)

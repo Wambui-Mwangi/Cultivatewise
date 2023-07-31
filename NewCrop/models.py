@@ -7,6 +7,7 @@ class AddedCrop(models.Model):
     user = models.ForeignKey(Customer, on_delete=models.CASCADE)
     crop = models.ForeignKey(Plant, on_delete=models.CASCADE)
     crop_name = models.CharField(max_length=30)
+    crop_category = models.CharField(max_length=30)
     description = models.TextField()
     ideal_climate = models.CharField(max_length=100)
     water_requirements = models.CharField(max_length=100)
